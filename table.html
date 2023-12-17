@@ -1,66 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
   <title>Document</title>
 </head>
+
 <body>
-  <header class="header">
-    <div class="container header-cont">
-      <ul class="head-menu ">
-        <li><a href="index.html" class="head-href roboto">Home</a></li>
-        <li><a href="gallery.html" class="head-href roboto">Gallery</a></li>
-        <li class="hover">
-          <p class="head-href roboto">Homeworks</p>
-          <ul class="sec-menu">
-            <li><a href="table.html" class="head-href rethink">Table</a></li>
-            <li><a href="inline.html" class="head-href rethink">Inline block</a></li>
-            <li><a href="float.html" class="head-href rethink">Float</a></li>
-            <li class="pos-rel hover-flex">
-              <p href="#" class="head-href rethink ">layouts</p>
-              <a href="flex.html" class="flex-href head-href Montserrat" >Flex</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </header>
-<section>
-  <div class="container">
-  <table>
-    <tbody >
-        <tr>
-            <td colspan="2" style="background: gray;">1</td>
-            <td >3</td>
-            <td>4</td>
-            <td>5</td>
-            <td rowspan="3" style="background: teal;">6</td>
-        </tr>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container header-cont">
+        <ul class="head-menu ">
+          <li><a href="index.html" class="head-href roboto home-icon">Home</a></li>
+          <li><a href="gallery.html" class="head-href roboto gallery-icon">Gallery</a></li>
+          <li class="hover">
+            <p class="head-href roboto homeworks-icon">Homeworks</p>
+            <ul class="sec-menu">
+              <li><a href="table.html" class="head-href rethink">Table</a></li>
+              <li><a href="inline.html" class="head-href rethink">Inline block</a></li>
+              <li><a href="float.html" class="head-href rethink">Float</a></li>
+              <li class="pos-rel hover-flex">
+                <p class="head-href rethink ">layouts</p>
+                <a href="flex.html" class="flex-href head-href Montserrat flex-icon">Flex</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="margin-bottom">
+      <section>
+        <div class="container">
+          <table class="margin-bottom">
+            <tbody>
+              <tr>
+                <td colspan="2" style="background: gray;">1</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td rowspan="3" style="background: teal;">6</td>
+              </tr>
 
-        <tr>
-            <td rowspan="2" style="background: darkgreen;">7</td>
-            <td>8</td>
-            <td rowspan="2" colspan="3" style="background: yellow;">9</td>
-        </tr>
+              <tr>
+                <td rowspan="2" style="background: darkgreen;">7</td>
+                <td>8</td>
+                <td rowspan="2" colspan="3" style="background: yellow;">9</td>
+              </tr>
 
-        <tr>
-            <td>14</td>
-        </tr>
+              <tr>
+                <td>14</td>
+              </tr>
 
-        <tr>
-            <td colspan="3" rowspan="2" style="background:blue;">19</td>
-            <td>22</td>
-            <td>23</td>
-            <td rowspan="2" style="background: darkgreen;">24</td>
-        </tr>
+              <tr>
+                <td colspan="3" rowspan="2" style="background:blue;">19</td>
+                <td>22</td>
+                <td>23</td>
+                <td rowspan="2" style="background: darkgreen;">24</td>
+              </tr>
 
-        <tr>
-            <td colspan="2" style="background: gray;">28</td>
-        </tr>
-    </tbody>
+              <tr>
+                <td colspan="2" style="background: gray;">28</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
   </div>
-</section>
+  <footer class="body-footer">
+    <div class="container foot-cont">
+      <a href="#" class="facebook"></a>
+      <a href="#" class="telegram"></a>
+      <a href="#" class="instagram"></a>
+      <a href="#" class="linkedin"></a>
+    </div>
+  </footer>
 </body>
+
 </html>

@@ -1,66 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
   <title>Flex</title>
 </head>
+
 <body>
-  <header class="header">
-    <div class="container header-cont">
-      <ul class="head-menu ">
-        <li><a href="index.html" class="head-href roboto">Home</a></li>
-        <li><a href="gallery.html" class="head-href roboto">Gallery</a></li>
-        <li class="hover">
-          <p class="head-href roboto">Homeworks</p>
-          <ul class="sec-menu">
-            <li><a href="table.html" class="head-href rethink">Table</a></li>
-            <li><a href="inline.html" class="head-href rethink">Inline block</a></li>
-            <li><a href="float.html" class="head-href rethink">Float</a></li>
-            <li class="pos-rel hover-flex">
-              <p href="#" class="head-href rethink ">layouts</p>
-              <a href="flex.html" class="flex-href head-href Montserrat" >Flex</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </header>
-<main>
-  <section style="margin-bottom: 50px;" class="outline">
-    <div class="container">
-      <div class="flex">
-        <div class="h400 w400">1</div>
-        <div class="h400 w400">2</div>
-        <div class="h400 w400">3</div>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container header-cont">
+        <ul class="head-menu ">
+          <li><a href="index.html" class="head-href roboto home-icon">Home</a></li>
+          <li><a href="gallery.html" class="head-href roboto gallery-icon">Gallery</a></li>
+          <li class="hover">
+            <p class="head-href roboto homeworks-icon">Homeworks</p>
+            <ul class="sec-menu">
+              <li><a href="table.html" class="head-href rethink">Table</a></li>
+              <li><a href="inline.html" class="head-href rethink">Inline block</a></li>
+              <li><a href="float.html" class="head-href rethink">Float</a></li>
+              <li class="pos-rel hover-flex">
+                <p class="head-href rethink ">layouts</p>
+                <a href="flex.html" class="flex-href head-href Montserrat flex-icon">Flex</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
-      <div class="flex">
-        <div>
-          <div class="h200 w800">4</div>
-          <div class="h200 w800">5</div>
-        </div>
-        <div>
-          <div class="h33 w400">6</div>
-          <div class="h33 w400">7</div>
-          <div class="h33 w400">8</div>
-        </div>
-      </div>
-      <div class="flex">
-        <div class="h400 w400">9</div>
-        <div>
-          <div class="h200 w800">10</div>
+    </header>
+    <main>
+      <section style="margin-bottom: 50px;" class="outline">
+        <div class="container">
           <div class="flex">
-            <div class="h200 w400">11</div>
+            <div class="h400 w400">1</div>
+            <div class="h400 w400">2</div>
+            <div class="h400 w400">3</div>
+          </div>
+          <div class="flex">
             <div>
-              <div class="h100 w400">12</div>
-              <div class="h100 w400">13</div>
+              <div class="h200 w800">4</div>
+              <div class="h200 w800">5</div>
+            </div>
+            <div>
+              <div class="h33 w400">6</div>
+              <div class="h33 w400">7</div>
+              <div class="h33 w400">8</div>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="h400 w400">9</div>
+            <div>
+              <div class="h200 w800">10</div>
+              <div class="flex">
+                <div class="h200 w400">11</div>
+                <div>
+                  <div class="h100 w400">12</div>
+                  <div class="h100 w400">13</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+    </main>
+
+  </div>
+  <footer class="body-footer">
+    <div class="container foot-cont">
+      <a href="#" class="facebook"></a>
+      <a href="#" class="telegram"></a>
+      <a href="#" class="instagram"></a>
+      <a href="#" class="linkedin"></a>
     </div>
-  </section>
-</main>
+  </footer>
 </body>
+
 </html>

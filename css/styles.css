@@ -1,9 +1,28 @@
 @import url(reset.css);
 
 .clearfix::after {
-  content: "";
-  clear: both;
-  display: inline-block;
+    content: '';
+    clear: both;
+    display: block;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    flex: 1 0 auto;
+    background-color: lightgray;
+}
+
+.margin-bottom {
+    margin-bottom: 30px;
 }
 
 /* FONTS */
@@ -34,18 +53,18 @@
 /* FONTS */
 
 .roboto {
-  font-family: 'Roboto';
-  font-weight: 500;
+    font-family: 'Roboto';
+    font-weight: 500;
 }
 
 .Montserrat {
-  font-family: 'Montserrat';
-  font-weight: 200;
+    font-family: 'Montserrat';
+    font-weight: 200;
 }
 
 .rethink {
-  font-family: 'Rethink Sans';
-  font-weight: 100;
+    font-family: 'Rethink Sans';
+    font-weight: 100;
 }
 
 /* HEADER */
@@ -71,12 +90,12 @@
 
 .header {
     background: lightsalmon;
+    margin-bottom: 30px;
 }
 
 .header-cont {
     text-align: center;
     font-size: 24px;
-    margin-bottom: 30px;
 }
 
 .sec-menu {
@@ -99,70 +118,89 @@
 }
 
 .pos-rel {
-  position: relative;
+    position: relative;
 }
 
 .flex-href {
-  position: absolute;
-  top: 0;
-  right: 100%;
-  width: 100%;
-  display: none;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    display: none;
 }
 
 .hover-flex:hover .flex-href {
-  display: block;
+    display: block;
 }
 
+.home-icon {
+    padding: 10px 15px 10px 35px;
+    background: url(../icons/home.svg) aquamarine no-repeat 5px center / 24px auto;
+}
+
+.gallery-icon {
+    padding: 10px 15px 10px 35px;
+    background: url(../icons/gallery.svg) aquamarine no-repeat 5px center / 24px auto;
+}
+
+.homeworks-icon {
+    padding: 10px 35px 10px 15px;
+    background: url(../icons/homeworks.svg) aquamarine no-repeat right 5% center / 24px auto;
+}
+
+.flex-icon {
+    padding: 10px 35px 10px 15px;
+    background: url(../icons/flex.svg) aquamarine no-repeat 5px center/ 24px auto;
+}
 
 /* Blocks */
 .outline div {
-  outline: 1px solid red;
+    outline: 1px solid red;
 }
 
 .w800 {
-  width: 800px;
+    width: 800px;
 }
 
 .w400 {
-  width: 400px;
+    width: 400px;
 }
 
 .w200 {
-  width: 200px;
+    width: 200px;
 }
 
 .h400 {
-  height: 400px;
+    height: 400px;
 }
 
 .h200 {
-  height: 200px;
+    height: 200px;
 }
 
 .h33 {
-  height: 133.3333px;
+    height: 133.3333px;
 }
 
 .h100 {
-  height: 100px;
+    height: 100px;
 }
 
 .flex {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .float {
-  float:left;
+    float: left;
 }
 
 .inline {
- display: inline-block;
+    display: inline-block;
 }
 
 .fs {
-  font-size: 0;
+    font-size: 0;
 }
 
 /* Gallery */
@@ -238,8 +276,52 @@
 /* Table */
 
 tr td {
-  border: 2px solid black;
-  width: 250px;
-  height: 150px;
-  background-color: goldenrod;
+    border: 2px solid black;
+    width: 250px;
+    height: 150px;
+    background-color: goldenrod;
+}
+
+/* Footer */
+
+.body-footer {
+    background-color: lightsalmon;
+    height: 50px;
+    width: 100%;
+    
+    /* flex: 0 0 auto */
+}
+
+.foot-cont {
+    height: 100%;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.facebook {
+
+    background: url(../icons/facebook.svg) no-repeat center center/40px auto;
+    width: 40px;
+    height: 40px;
+}
+
+.telegram {
+    width: 40px;
+    height: 40px;
+    background: url(../icons/telegram.svg) no-repeat center center/40px auto;
+}
+
+.instagram {
+    width: 40px;
+    height: 40px;    
+    background: url(../icons/instagram.svg) no-repeat center center/40px auto;
+}
+
+.linkedin {
+    width: 40px;
+    height: 40px;
+    background: url(../icons/linkedin.svg) no-repeat center center/ 40px auto;
 }
