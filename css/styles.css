@@ -11,7 +11,8 @@ body {
     min-height: 100vh;
 }
 
-body {
+.body-wrapper {
+    min-height: 100vh ;
     display: flex;
     flex-direction: column;
 }
@@ -24,6 +25,7 @@ body {
 .margin-bottom {
     margin-bottom: 30px;
 }
+
 
 /* FONTS */
 
@@ -67,6 +69,91 @@ body {
     font-weight: 100;
 }
 
+
+/* Sidebar */
+.body-wrapper {
+    padding-left: 80px;
+    transition: padding .5s linear;
+    background-color: #ddc5a2;
+}
+
+
+
+.sidebar {
+    width: 80px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #e8dcb2;
+    padding-top: 46px;
+    overflow: hidden;
+    transition: all .5s linear;
+}
+
+
+.side-menu {
+    width: 100%;
+}
+
+.sidebar-href {
+    font-size: 21px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:black;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+
+}
+
+.sidebar-flex-element {
+    flex-shrink: 0;
+}
+
+
+.sidebar-span {
+    border: 3px solid black;
+    transform: rotate(45deg);
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-li {
+    transition: all .7s;
+    width: 100%;
+}
+
+.sidebar-li:hover .sidebar-svg {
+    transform: scale(1.5) rotate(-45deg);
+}
+
+.sidebar-li:hover {
+    background-color: #662e1c;
+}
+
+
+.sidebar-svg {
+    transform: rotate(-45deg);
+    width: 40px;
+    height: 40px;
+    transition: transform 0.6s;
+    
+}
+
+.sidebar:hover {
+    width: 300px;
+    background-color: #c9a66b;
+}
+
+.sidebar:hover.sidebar + .body-wrapper {
+    padding-left: 300px;
+}
 /* HEADER */
 
 .container {
@@ -106,7 +193,8 @@ body {
     display: flex;
     flex-flow: column;
     width: 100%;
-    display: none;
+    transform: translateY(-200%);
+    transition: all .5s;
 }
 
 .head-menu > li {
@@ -114,7 +202,7 @@ body {
 }
 
 .hover:hover .sec-menu {
-    display: flex;
+    transform: translateY(0);
 }
 
 .pos-rel {
@@ -126,11 +214,16 @@ body {
     top: 0;
     right: 100%;
     width: 100%;
-    display: none;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all .6s;
+    z-index: -1;
 }
 
 .hover-flex:hover .flex-href {
-    display: block;
+    /* display: block; */
+    transform: translateX(0);
+    opacity: 100;
 }
 
 .home-icon {
